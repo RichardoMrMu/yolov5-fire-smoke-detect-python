@@ -1,8 +1,16 @@
 # yolov5-fire-smoke-detect-python
 A python implementation of Yolov5 to detect fire or smoke in the wild in Jetson Xavier nx and Jetson nano
 
+You can see video play in [BILIBILI](https://www.bilibili.com/video/BV1VT4y1975b), or [YOUTUBE](https://www.youtube.com/watch?v=5Ysqc5bWhBM).
+
+If you have problem in this project, you can see this [artical](https://blog.csdn.net/weixin_42264234/article/details/121214079).
+
+And If you want play it in jetson nano or jetson xavier , you can see this project [yolov5-fire-smoke-detect](https://github.com/RichardoMrMu/yolov5-fire-smoke-detect)
+
+<img src="assets/yolofire.gif" >
+
 # Dataset
-You can get the dataset from this [url](https://aistudio.baidu.com/aistudio/datasetdetail/107770). And the fire & smoke detect project pdpd version can be found in this [url](https://github.com/PaddlePaddle/awesome-DeepLearning/tree/master/Paddle_Enterprise_CaseBook). It is an amazing project.
+You can get the dataset from this [aistudio url](https://aistudio.baidu.com/aistudio/datasetdetail/107770). And the fire & smoke detect project pdpd version can be found in this [url](https://github.com/PaddlePaddle/awesome-DeepLearning/tree/master/Paddle_Enterprise_CaseBook). It is an amazing project.
 ## Data
 This pro needs dataset like 
 ```
@@ -94,7 +102,7 @@ Finally You can get this.
 # parent
 # ├── yolov5
 # └── datasets
-#     └── coco128  �?downloads here
+#     └── coco128  downloads here
 
 
 # Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
@@ -124,4 +132,4 @@ Use `detect.py` to test.
 ```shell
 python detect.py --source ./data//yolodata/fire/cocolike/images/val/ --weights ./runs/train/exp/weights/best.pt
 ```
-You can see `{project}/runs/detect/` have results pngs.
+You can see `{project}/runs/detect/` has png results.
